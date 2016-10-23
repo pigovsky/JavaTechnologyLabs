@@ -168,6 +168,31 @@ public static <T> T getRandomItem(T[] all) {
 
 Також використайте цей метод для вибору трьох випадкових елементів 
 з масиву (списку) згенерованих об’єктів модельного класу.      
+\item Добавте до класу {\bf CollectionUtils} метод, що виводить на 
+екран консолі всі елементи колекції за допомогою інтерфейсу {\bf Iterable}
+\begin{lstlisting}
+public static <T> void printAll(Iterable<T> all) {
+    ...
+}
+\end{lstlisting}
+\item Добавте до класу {\bf CollectionUtils} метод, що фільтрує 
+всі елементи колекції за допомогою інтерфейсів 
+{\bf Iterable} та {\bf Predicate} 
+\begin{lstlisting}
+public static <T> List<T> filter(Iterable<T> all, Predicate<T> pred) {
+    ...
+}
+\end{lstlisting}
+\item Добавте до класу {\bf CollectionUtils} метод, що перетворює 
+всі елементи колекції за допомогою інтерфейсів 
+{\bf Iterable} та {\bf Function} з типу {\it S} в тип {\it T}. 
+\begin{lstlisting}
+public static <S, T> List<T> map(Iterable<S> all, Function<S, T> func) {
+    ...
+}
+\end{lstlisting}
+\item Продемонструйте можливості розроблених в трьох попередніх 
+завданнях методів для обробки колекцій модельних об’єктів.  
 \end{enumerate}
 
 \subsection{Додаткові завдання з конструювання ПЗ}
